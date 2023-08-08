@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
-letters = "abcdefghijklmnopqrstuvwxyz"
-result = ''.join([i for i in letters])
-print(result)
+# Print the ASCII alphabet in lowercase
+for i in range(ord('a'), ord('z') + 1):
+    print(chr(i), end="")
+print()
