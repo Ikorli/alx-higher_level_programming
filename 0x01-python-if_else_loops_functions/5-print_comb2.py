@@ -1,0 +1,3 @@
+#!/usr/bin/python3
+
+print(', '.join(f'{i:0>2}' for i in range(100)))
