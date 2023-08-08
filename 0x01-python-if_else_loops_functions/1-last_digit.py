@@ -4,11 +4,12 @@ import random
 number = random.randint(-10000, 10000)
 ldigit = abs(number) % 10
 
-if ldigit > 5:
-    comparison = "greater than 5"
-elif ldigit == 0:
-    comparison = "0"
-else:
-    comparison = "less than 6 and not 0"
+if number < 0:
+    ldigit *= -1
 
-print(f"Last digit of {number} is {ldigit} and is {comparison}")
+if ldigit > 5:
+    print(f"Last digit of {number} is {ldigit} and is greater than 5")
+elif ldigit == 0:
+    print(f"Last digit of {number} is {ldigit} and is 0")
+else:
+    print(f"Last digit of {number} is {ldigit} and is less than 6 and not 0")
