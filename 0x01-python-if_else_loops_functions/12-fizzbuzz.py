@@ -9,8 +9,3 @@ def fizzbuzz():
             print("Buzz", end=" ")
         else:
             print("{:d}".format(i), end=" ")
-
-    print("")  # Add a newline at the end
-
-# Example usage
-fizzbuzz()
