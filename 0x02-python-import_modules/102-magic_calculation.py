@@ -3,4 +3,4 @@ def magic_calculation(a, b):
     if a < b:
         return a + b
     else:
-        raise Exception('a should be less than b')
+        raise Exception('a is less than b')
