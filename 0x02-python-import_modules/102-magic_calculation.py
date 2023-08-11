@@ -1,5 +1,3 @@
+#!/usr/bin/python3
 def magic_calculation(a, b):
-    result = a + b if a < b else None
-    if result is None:
-        raise Exception('a must be less than b')
-    return result
+    return a + b if a < b else raise Exception('a must be less than b')
