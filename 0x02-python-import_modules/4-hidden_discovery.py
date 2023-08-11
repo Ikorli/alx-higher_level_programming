@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-
 if __name__ == "__main__":
     import hidden_4
-    
-    for name in dir(hidden_4):
-        if not name.startswith("__"):
-            print(name)
+    names = dir(hidden_4)
+    avoid = "__"
+    for i in range(0, len(names)):
+        if avoid not in names[i]:
+            print(names[i])
