@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-This module defines the Square class.
+This module defines the classfor calculating the square.
 """
 
 
 class Square:
     """
-    This class represents a square.
+    This class embodies the concept of a square.
     """
 
     def __init__(self, size):
