@@ -1,21 +1,28 @@
 #!/usr/bin/python3
-list_division = __import__('4-list_division').list_division
 
-def test_list_division(my_l_1, my_l_2):
-    max_length = max(len(my_l_1), len(my_l_2))
-    result = list_division(my_l_1, my_l_2, max_length)
+def list_division(my_list_1, my_list_2, list_length):
+    result = []
+
+    for i in range(list_length):
+        try:
+            quotient = 0
+            if i < len(my_list_1) and i < len(my_list_2):
+                if isinstance(my_list_1[i], (int, float)) and isinstance(my_list_2[i], (int, float)):
+                    if my_list_2[i] != 0:
+                        quotient = my_list_1[i] / my_list_2[i]
+                    else:
+                        raise ZeroDivisionError
+                else:
+                    raise TypeError
+            else:
+                raise IndexError
+        except ZeroDivisionError:
+            print("division by 0")
+        except TypeError:
+            print("wrong type")
+        except IndexError:
+            print("out of range")
+        finally:
+            result.append(quotient)
+
     return result
-
-# Test case 1
-my_l_1 = [10, 8, 4]
-my_l_2 = [2, 4, 4]
-result = test_list_division(my_l_1, my_l_2)
-print(result)
-
-print("--")
-
-# Test case 2
-my_l_1 = [10, 8, 4, 4]
-my_l_2 = [2, 0, "H", 2, 7]
-result = test_list_division(my_l_1, my_l_2)
-print(result)
