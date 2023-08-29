@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-#This module defines the class for calculating the square.
-
+"""
+This module defines the class for calculating the square.
+"""
 
 class Square:
-    #This class embodies the concept of a square.
+"""
+    This class embodies the concept of a square.
+"""
 
     def __init__(self, size=0, position=(0, 0)):
         """
