@@ -3,10 +3,11 @@
 This module defines the class for calculating the square.
 """
 
+
 class Square:
-"""
+    """
     This class embodies the concept of a square.
-"""
+    """
 
     def __init__(self, size=0, position=(0, 0)):
         """
@@ -35,7 +36,7 @@ class Square:
     @size.setter
     def size(self, value):
         """
-        Arranges the value of the size attribute.
+        This arranges the value of the size attribute.
 
         Args:
             value (int): The size of the square.
@@ -63,7 +64,7 @@ class Square:
     @position.setter
     def position(self, value):
         """
-        Arranges the value of the position attribute.
+        This arranges the value of the position attribute.
 
         Args:
             value (tuple): The position of the square.
